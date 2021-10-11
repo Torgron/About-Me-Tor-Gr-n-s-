@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    font-family: 'Noto Serif', serif;
+    background-color: lightpink;
+    border-top: 1vh solid black;
+    margin-top: auto;
+    padding: 0 0 0.2vh 1vw;
+    text-align: center;
+}
+
+img {
+    border-radius: 100%;
+    width: 13%;
+    margin: 1%;
+    box-shadow: 0.8vw 1vh 3px rgb(206, 135, 146);
+}
+
+h1 {
+    font-size: 6vw;
+    margin: auto 1% auto 1%;
+    text-align: center;
+    text-shadow: 0.5vw 0.7vh 3px rgb(206, 135, 146);
+    font-family: 'Roboto Slab', serif;
+}
+
+#h2_skills {
+    margin: auto;
+    text-align: center;
+    width: 18%;
+    cursor: default;
+}
+
+#h2_docs {
+    margin: auto;
+    text-align: center;
+    width: 34%;
+    cursor: default;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    border: 1vh solid black;
+    text-align: center;
+    padding: 1%;
+}
+
+th {
+    border-bottom: hidden;
+    padding-bottom: 0;
+}
+
+#header {
+    background-color: lightpink;
+    border-bottom: 1vh solid black;
+    overflow: hidden;
+    display: flex;
+}
+
+.checked {
+    color: orange;
+}
+
+.footer_element {
+    margin-right: 5%;
+    display: inline-block;
+}
+
+#document_list {
+    font-family: Lato;
+    font-size: 28px;
+    display: contents;
+}
+#document_list > ul {
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#document_list > ul > li {
+    text-decoration: none;
+    margin-bottom: 3vh;
+}
+
+
+.rainbowText {
+    font-family:arial black;
+    font-size:70px;
+}
+
+.rainbowText:hover {
+    background-image: 
+      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: move 80s linear infinite;
+}
+@keyframes move {
+	to {
+		background-position: 4500vh;
+	}
+}
+
+
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+.progress {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+.progress > li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: black;
+  font-family: Lato;
+  font-weight: 5000;
+  margin: 2rem;
+  text-shadow: 0.2vw 0.2vh 4px grey;
+}
+.progress > li:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;
+}
+.progress > li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 3.7rem;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.progress svg {
+  width: 10rem;
+  height: 10rem;
+}
+.progress svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+}
+.progress svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: #fff;
+  opacity: 0.9;
+  -webkit-animation: load 10s;
+          animation: load 10s;
+}
+.progress > li {
+    transition: 1s;
+}
+.progress > li:hover {
+    font-size: 20px;
+    transition: 1s;
+}
